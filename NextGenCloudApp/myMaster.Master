@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="myMaster.master.cs" Inherits="NextGenCloudApp.myMaster" %>
+
+<!DOCTYPE PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="styles/w4d.css" rel="Stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div align="center">
+            <div id="maincolor">
+                <div id="mainpadding">
+                    <div class="header">
+                        <div class="logo">
+                            <img src="images/logo.jpg" runat="server" alt="Logo" id="imgSchooLogo">
+                        </div>
+                        
+
+                        
+                    </div>
+                </div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                <div id="footer">
+                    <p>
+                        <a href="#" style="color: #333333; font-size: 12px; text-decoration: none;">About Us</a>
+                        &nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp; <a href="#" style="color: #333333; font-size: 12px; text-decoration: none;">Home</a>&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;<a href="#" style="color: #333333; font-size: 12px; text-decoration: none;">Contact Us</a>
+                    </p>
+                    <p>
+                        © 2020 TCS Cloud Ops. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
